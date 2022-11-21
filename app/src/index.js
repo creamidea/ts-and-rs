@@ -12,7 +12,15 @@ const rust = import('hello-rust')
 
 rust
   .then(m => {
-    //  m.greet('World!') 
-    console.log('m:', m, m.abs(-12))
+    //  m.greet('World!')
+    console.log('m:', m.abs(-12))
+    // var a = 100;
+    console.log('eval:', m.eval('arg0,arg1'))
+    // console.log(eval('a+1'))
+    console.log(m.decode('%2fhello?'))
   })
   .catch(console.error);
+
+// import { abs } from 'hello-rust'
+// console.log(abs(-12))
+// console.log('hhhh')
