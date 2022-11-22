@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const WasmPackPlugin = require("@wasm-tool/wasm-pack-plugin");
 
@@ -18,11 +17,9 @@ module.exports = {
     //     ]
     // },
     plugins: [
-        // new HtmlWebpackPlugin(),
         new WasmPackPlugin({
             crateDirectory: path.resolve(__dirname, ".."),
             outDir: path.resolve(__dirname, "hello-rust"),
-            // extraArgs: '-d app/hello-rust --target web'
         }),
         // Have this example work in Edge which doesn't ship `TextEncoder` or
         // `TextDecoder` at this time.
