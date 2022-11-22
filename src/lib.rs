@@ -23,6 +23,8 @@ pub fn run() {
   msg.push(&JsValue::from("hello, this is out from rust"));
   console::log(&msg);
 
+  Closure::<dyn Fn()>::new(move || println!("hhh"));
+
   #[wasm_bindgen]
   struct Person {
     name: String,

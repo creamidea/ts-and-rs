@@ -10,6 +10,11 @@
 // const rust = import('./pkg')
 const rust = import('hello-rust')
 
+import calc from './lib/index.js';
+// const add = require('./lib/calc');
+console.log('calc:', calc)
+
+
 rust
   .then(m => {
     //  m.greet('World!')
