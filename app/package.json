@@ -19,5 +19,13 @@
     "webpack-cli": "^5.0.0",
     "webpack-dev-server": "^4.11.1"
   },
-  "packageManager": "yarn@3.3.0"
+  "packageManager": "yarn@3.3.0",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "resolutions": {
+    "react@^18.2.0": "patch:react@npm%3A18.2.0#./.yarn/patches/react-npm-18.2.0-1eae08fee2.patch",
+    "loose-envify@^1.1.0": "patch:loose-envify@npm%3A1.4.0#./.yarn/patches/loose-envify-npm-1.4.0-6307b72ccf.patch"
+  }
 }

@@ -1,0 +1,12 @@
+diff --git a/index.js b/index.js
+index 999ead77897d1726c100686831187fff3041fc2e..8ac84fec57522d6ae2a5820b959e95ea44952915 100644
+--- a/index.js
++++ b/index.js
+@@ -1,5 +1,7 @@
+ 'use strict';
+ 
++console.log('env:', process.env)
++
+ if (process.env.NODE_ENV === 'production') {
+   module.exports = require('./cjs/react.production.min.js');
+ } else {

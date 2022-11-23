@@ -1,0 +1,9 @@
+diff --git a/index.js b/index.js
+index 8cd8305ddc1a012b319732a3321e647561060855..bea9b44fb97927d8596e4231d4b9089f783d8f56 100644
+--- a/index.js
++++ b/index.js
+@@ -1,3 +1,3 @@
+ 'use strict';
+-
++console.log('loose-envify:', process.env)
+ module.exports = require('./loose-envify')(process.env);
