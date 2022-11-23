@@ -1,3 +1,8 @@
+import calc from './lib/index.js';
+// const add = require('./lib/calc');
+console.log('calc:', calc)
+
+
 // import fs from 'node:fs';
 // WebAssembly.instantiate(fs.readFileSync('../target/wasm32-unknown-unknown/debug/b.wasm'))
 //   .then(wasm => {
@@ -9,11 +14,6 @@
 // will work here one day as well!
 // const rust = import('./pkg')
 const rust = import('hello-rust')
-
-import calc from './lib/index.js';
-// const add = require('./lib/calc');
-console.log('calc:', calc)
-
 
 rust
   .then(m => {

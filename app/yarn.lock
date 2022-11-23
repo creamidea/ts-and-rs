@@ -664,6 +664,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     text-encoding: ^0.7.0
+    typescript: ^4.9.3
     webpack: ^5.75.0
     webpack-cli: ^5.0.0
     webpack-dev-server: ^4.11.1
@@ -2048,7 +2049,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loose-envify@npm:^1.1.0":
+"loose-envify@npm:1.4.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
   dependencies:
@@ -2056,6 +2057,17 @@ __metadata:
   bin:
     loose-envify: cli.js
   checksum: 6517e24e0cad87ec9888f500c5b5947032cdfe6ef65e1c1936a0c48a524b81e65542c9c3edc91c97d5bddc806ee2a985dbc79be89215d613b1de5db6d1cfe6f4
+  languageName: node
+  linkType: hard
+
+"loose-envify@patch:loose-envify@npm%3A1.4.0#./.yarn/patches/loose-envify-npm-1.4.0-6307b72ccf.patch::locator=app%40workspace%3A.":
+  version: 1.4.0
+  resolution: "loose-envify@patch:loose-envify@npm%3A1.4.0#./.yarn/patches/loose-envify-npm-1.4.0-6307b72ccf.patch::version=1.4.0&hash=96ad06&locator=app%40workspace%3A."
+  dependencies:
+    js-tokens: ^3.0.0 || ^4.0.0
+  bin:
+    loose-envify: cli.js
+  checksum: 85cc15ebfb1480a36461d520f0880b1109f2c61c78b6766ff955cc6a277f1f9f87865c802ed1f5af3fe37a4eabcd04b1ec188e6d9bbe771beee610492cc11b20
   languageName: node
   linkType: hard
 
@@ -2660,12 +2672,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^18.2.0":
+"react@npm:18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
     loose-envify: ^1.1.0
   checksum: 88e38092da8839b830cda6feef2e8505dec8ace60579e46aa5490fc3dc9bba0bd50336507dc166f43e3afc1c42939c09fe33b25fae889d6f402721dcd78fca1b
+  languageName: node
+  linkType: hard
+
+"react@patch:react@npm%3A18.2.0#./.yarn/patches/react-npm-18.2.0-1eae08fee2.patch::locator=app%40workspace%3A.":
+  version: 18.2.0
+  resolution: "react@patch:react@npm%3A18.2.0#./.yarn/patches/react-npm-18.2.0-1eae08fee2.patch::version=18.2.0&hash=586885&locator=app%40workspace%3A."
+  dependencies:
+    loose-envify: ^1.1.0
+  checksum: 36fdfdbe5c3e5147c4544c3cc0352eaf23e81c066cee50a38b2a0c050247609d7f9bc5523510e68130e06f082fa1fdbfebd2a9697984d35c5f52a331f4aa5b4f
   languageName: node
   linkType: hard
 
@@ -3265,6 +3286,26 @@ __metadata:
     media-typer: 0.3.0
     mime-types: ~2.1.24
   checksum: 2c8e47675d55f8b4e404bcf529abdf5036c537a04c2b20177bcf78c9e3c1da69da3942b1346e6edb09e823228c0ee656ef0e033765ec39a70d496ef601a0c657
+  languageName: node
+  linkType: hard
+
+"typescript@npm:^4.9.3":
+  version: 4.9.3
+  resolution: "typescript@npm:4.9.3"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 17b8f816050b412403e38d48eef0e893deb6be522d6dc7caf105e54a72e34daf6835c447735fd2b28b66784e72bfbf87f627abb4818a8e43d1fa8106396128dc
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^4.9.3#~builtin<compat/typescript>":
+  version: 4.9.3
+  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 67ca21a387c0572f1c04936e638dde7782c5aa520c3754aadc7cc9b7c915da9ebc3e27c601bfff4ccb7d7264e82dce6d277ada82ec09dc75024349e0ef64926d
   languageName: node
   linkType: hard
 

@@ -8,13 +8,15 @@
   "description": "",
   "type": "module",
   "scripts": {
-    "build": "NODE_OPTIONS=--openssl-legacy-provider webpack",
-    "serve": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server",
+    "build": "webpack",
+    "serve": "webpack-dev-server",
+    "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "@wasm-tool/wasm-pack-plugin": "^1.6.0",
     "text-encoding": "^0.7.0",
+    "typescript": "^4.9.3",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.0",
     "webpack-dev-server": "^4.11.1"
