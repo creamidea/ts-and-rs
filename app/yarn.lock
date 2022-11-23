@@ -661,6 +661,7 @@ __metadata:
   resolution: "app@workspace:."
   dependencies:
     "@wasm-tool/wasm-pack-plugin": ^1.6.0
+    hello-rust: "workspace:^"
     react: ^18.2.0
     react-dom: ^18.2.0
     text-encoding: ^0.7.0
@@ -1630,7 +1631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hello-rust@workspace:hello-rust":
+"hello-rust@workspace:^, hello-rust@workspace:hello-rust":
   version: 0.0.0-use.local
   resolution: "hello-rust@workspace:hello-rust"
   languageName: unknown

@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@wasm-tool/wasm-pack-plugin", "npm:1.6.0"],\
+            ["hello-rust", "workspace:hello-rust"],\
             ["react", "patch:react@npm%3A18.2.0#./.yarn/patches/react-npm-18.2.0-1eae08fee2.patch::version=18.2.0&hash=586885&locator=app%40workspace%3A."],\
             ["react-dom", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:18.2.0"],\
             ["text-encoding", "npm:0.7.0"],\
@@ -876,6 +877,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["app", "workspace:."],\
             ["@wasm-tool/wasm-pack-plugin", "npm:1.6.0"],\
+            ["hello-rust", "workspace:hello-rust"],\
             ["react", "patch:react@npm%3A18.2.0#./.yarn/patches/react-npm-18.2.0-1eae08fee2.patch::version=18.2.0&hash=586885&locator=app%40workspace%3A."],\
             ["react-dom", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:18.2.0"],\
             ["text-encoding", "npm:0.7.0"],\

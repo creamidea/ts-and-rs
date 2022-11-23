@@ -23,6 +23,7 @@
   },
   "packageManager": "yarn@3.3.0",
   "dependencies": {
+    "hello-rust": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
